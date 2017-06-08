@@ -1,17 +1,34 @@
-# .NET Core Home
+﻿# .NET Core Home
 
 The core repository is the starting point to engage in and learn about the
-.NET Core stack.
+.NET Core stack. 
+
+> **Note:** please note that this repository is not for filing product issues.
+> If you run into an issue using .NET Core, there are multiple repos where you can 
+> file an issue:
+> * [dotnet/cli](https://github.com/dotnet/cli) - for CLI tools and questions
+> * [dotnet/corefx](https://github.com/dotnet/corefx) - for API issues and questions
+> * [dotnet/coreclr](https://github.com/dotnet/coreclr) - for runtime issues
+> * [dotnet/docs](https://github.com/dotnet/docs) - for .NET documentation issues and questions
+> * [dotnet/sdk](https://github.com/dotnet/sdk) - for .NET Core SDK (used by Visual Studio and CLI) issues and questions
+> * [dotnet/standard](https://github.com/dotnet/standard) - for .NET Standard issues and questions
+> * [nuget/home](https://github.com/nuget/home) - for NuGet questions and issues
+> * [aspnet/home](https://github.com/aspnet/home) - for ASP.NET Core questions and issues.
+> * [aspnet/Docs](https://github.com/aspnet/Docs) - for ASP.NET and ASP.NET Core documentation issues and questions
+> * [dotnet/netcorecli-fsc](https://github.com/dotnet/netcorecli-fsc) - for F# questions and issues
+
+> 
+> We will be removing the ability to file issues on this repo in the near future.
 
 ## Get Started
 
 If you're new to .NET Core and have 10 minutes to try it, start here: 
-- [What is .NET Core?](http://dotnet.github.io/about/)
-- [Get Started with .NET Core on Windows, OSX and Linux](https://www.microsoft.com/net/core)
+- [What is .NET Core?](https://www.microsoft.com/net/core/platform)
+- [Get Started with the Official releases of .NET Core on Windows, OSX and Linux](https://www.microsoft.com/net/core)
 
-If you have some more time and want to go deeper:
-- [Install ASP.NET Core on Windows, OSX and Linux](https://github.com/aspnet/home)
-- [Install .NET Core on Windows, OSX and Linux](https://github.com/dotnet/coreclr#get-net-core)
+If you have some more time and want to go deeper or get the latest builds:
+- [Get the latest builds of .NET Core on Windows, OSX and Linux](https://github.com/dotnet/core-setup/blob/master/README.md)
+- [Get the latest builds of ASP.NET Core on Windows, OSX and Linux](https://github.com/aspnet/home)
 
 ## .NET Core Platform
 
@@ -42,13 +59,13 @@ details.
 
 The .NET Core platform is part of the [.NET Foundation](http://www.dotnetfoundation.org/projects).
 
-* [.NET Core Project](http://www.dotnetfoundation.org/netcore)
-* [.NET Compiler Platform ("Roslyn" Project)](http://www.dotnetfoundation.org/dotnet-compiler-platform)
-* [ASP.NET Core Project](http://www.dotnetfoundation.org/aspnet-5)
+* [.NET Core Project](http://www.dotnetfoundation.org/net-core)
+* [.NET Compiler Platform ("Roslyn" Project)](http://www.dotnetfoundation.org/net-compiler-platform-roslyn)
+* [ASP.NET Core Project](http://www.dotnetfoundation.org/asp-net-core)
 
 ## Licenses
 
-.NET Core platform projects typically use either the [MIT](LICENSE) or
+.NET Core platform projects typically use either the [MIT](LICENSE.TXT) or
 [Apache 2](http://www.apache.org/licenses/LICENSE-2.0) licenses for code.
 Some projects license documentation and other forms of content under
 [Creative Commons Attribution 4.0](http://creativecommons.org/licenses/by/4.0/).
@@ -72,7 +89,7 @@ Framework features to .NET Core.
 ## Understanding the relationship between .NET Core and Mono
 
 Mono is an important part of the .NET ecosystem, particularly for client
-scenarios (e.g. Xamarin). We will look for ways to collaborate with Mono
+scenarios (for example, Xamarin). We will look for ways to collaborate with Mono
 developers and encourage them to take our code to improve Mono. We will also
 look for opportunities to improve .NET Core with MIT-licensed Mono code.
 
@@ -84,7 +101,5 @@ example.
 
 [ASP.NET Core](https://github.com/aspnet/home) is a new cross-platform version of
 ASP.NET that is designed for the cloud, and runs on Windows, Linux and Mac. It
-uses the .NET Framework to run on Windows, and can also run on .NET Core for
-greater deployment flexibility on Windows. It currently uses Mono for Linux and
-Mac support but will move to .NET Core for those platforms when they are
-supported.
+targets .NET Core by default, but you may choose to target the .NET Framework on
+Windows.
